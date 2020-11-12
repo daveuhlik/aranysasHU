@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	background-color: #7C98AE;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+}
+
+.hidden {
+	display: none;
+}
+
+/******** Typography ***********/
+
+.nav-item {
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*********** Layout *************/
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #fff;
+	width: 900px;
+	margin: .5em auto;
+}
+
+.hero-image {
+	width: 100%;
+}
+
+.main-nav {
+	text-align: center;
+}
