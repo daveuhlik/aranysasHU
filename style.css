@@ -101,7 +101,7 @@ body {
 
 .main-nav {
   list-style-type: none;
-  display: block; /* none */
+  display: none; /* none */
 }
 
 .navbar-toggle {
