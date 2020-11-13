@@ -119,7 +119,7 @@ body {
 
 /* =============== Desktop =============== */
 
-@media screen and (min-width: 764px) {
+@media screen and (min-width: 675px) {
   .navbar {
     display: flex;
     padding-bottom: 0;
