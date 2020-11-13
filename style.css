@@ -1,3 +1,58 @@
+
+/* =========== A SIMPLE CSS RESET FROM ERIC MEYER ================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* ================ HTML5 display-role reset for older browsers ============== */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ========================= END OF CSS RESET ========================== */
+
 body {
 	margin: 0;
 	background-color: #7C98AE;
@@ -14,9 +69,9 @@ body {
 	display: none;
 }
 
-/*============== Typography ==============*/
+/* ============== Mobile ============== */
 
-.nav-item {
+/*.nav-item {
 	text-transform: uppercase;
 	color: #fff;
 	text-decoration: none;
@@ -31,15 +86,95 @@ ul {
 	padding: 0;
 }
 
-.main-nav-list {
+.main-nav {
 	line-height: 2em;
+	display: none;
 }
 
-.main-nav-list a:hover,
-.main-nav-list a:focus {
+.main-nav a:hover,
+.main-nav a:focus {
 	text-decoration: : underline;
 	color: #294356;
 }
+
+.navbar-toggle {
+	position: absolute;
+	cursor: pointer;
+	top: 20px;
+  	right: 20px;
+  	color: rgba(255,255,255,0.8);
+  	font-size: 24px;
+}*/
+
+.navbar {
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: #ced1b2;
+  border: 1px solid #82856d;
+  color: #686C50;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+  font-size: 1.2rem;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer; 
+  color: rgba(255,255,255,0.8);
+  font-size: 24px;
+}
+
+.active {
+	display: block;
+}
+
+/* *************** Desktop ************ */
+
+@media screen and (min-width: 764px) {
+  .navbar {
+    display: flex;
+    padding-bottom: 0;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+   }
+
+  .main-nav li {
+    margin: 20px;
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+}
+
+
+
+
 
 .subtitle {
 	color: rgb(170,143,76);
@@ -99,7 +234,7 @@ ul {
 	margin: 0 auto;
 }
 
-.main-nav {
+.navbar {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -124,7 +259,7 @@ aside {
 }
 
 @media (min-width: 675px) {
-	.main-nav {
+	.navbar {
 		flex-direction: row;
 	}
 

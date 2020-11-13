@@ -5,14 +5,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>aranysas.hu - Katonai repülés, gépek és emberek, hadi históriák</title>
 		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/e3e2b67f46.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<div class="container">
 			<h1 class="hidden">Aranysas.hu Katonai repülés</h1>
 			<header class="header">
 				<img src="https://aranysas.hu/images/header.jpg" alt="" class="hero-image">
-				<nav class="main-nav">
-					<ul class="main-nav-list">
+
+				<nav class="navbar">
+					<span class="navbar-toggle" id="js-navbar-toggle">
+						<i class="fas fa-bars"></i>
+					</span>
+					<ul class="main-nav" id="js-menu">
 						<li>
 							<a href="#" class="nav-item">Kezdőoldal</a>
 						</li>
@@ -118,4 +123,5 @@
 			
 		</div>
 	</body>
+	<script type="text/javascript" src="navbar.js"></script>
 </html>
