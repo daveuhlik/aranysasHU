@@ -74,10 +74,6 @@ body {
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	border: 1px solid #fff;
 	width: 900px;
 	max-width: 100%;
@@ -91,10 +87,13 @@ body {
 	padding: 5px;
 }
 
+.hero-image {
+	width: 900px;
+	max-width: 100%;
+}
+
 .navbar {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	
 	text-align: center;
 	background-color: rgb(165,184,201);
 	margin: 0 auto;
@@ -105,8 +104,10 @@ body {
 }
 
 .main-nav {
-  list-style-type: none;
-  display: none;
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+  
 }
 
 .main-nav li {
@@ -163,6 +164,7 @@ strong {
 
 main {
 	background-color: rgb(204,214,224);
+	border-top: 1px solid #fff;
 }
 
 .cikk {
@@ -177,7 +179,7 @@ main {
 	.content {
 		flex-direction: column;
 	}
-	
+
 	.navbar-toggle {
 		  position: absolute;
 		  top: 20px;
@@ -185,17 +187,18 @@ main {
 		  cursor: pointer; 
 		  color: rgba(255,255,255,0.8);
 		  font-size: 24px;
-	}
-
-	.active {
-		display: block;
+		  display: block;
 	}
 
 	.main-nav {
     	display: flex;
     	flex-direction: column;
-    
+    	display: none;
    }
+
+   .active {
+		display: block;
+	}
 
 }
 
